@@ -24,6 +24,7 @@
   flex-direction: column;
   overflow: hidden;
   border: solid #e3f702 5px;
+  border-radius: 2rem;
 }
 .display{
   min-height: 200px;
