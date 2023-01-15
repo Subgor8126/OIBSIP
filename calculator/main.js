@@ -18,6 +18,11 @@ for (let key of keys){
         display_input.innerHTML = inputClean(input);
       }
       else if (value == '=') {
+        try{
+            let result = eval(finalInput(input));
+        } catch {
+            display_output.innerHTML = "Error"
+        }
         let result = eval(finalInput(input));
 
         display_output.innerHTML = result;
@@ -38,7 +43,6 @@ for (let key of keys){
       ) {
           input += ")";
         }
-
         display_input.innerHTML = inputClean(input);
       }
       else {
@@ -69,7 +73,7 @@ function inputValidation (value) {
 
 	return true;
 }
-//to color code the operators the operators
+//to color code the operators the operators and display error message for invalid expressions
 function inputClean(input) {
 	let input_arr = input.split("");
 	let input_arr_length = input_arr.length;
@@ -89,7 +93,9 @@ function inputClean(input) {
 			input_arr[i] = `<span class="brackets">)</span>`;
 		} else if (input_arr[i] == "%") {
 			input_arr[i] = `<span class="percent">%</span>`;
-		}
+		} else if (input_arr_length<=1) {
+      			display_output == "Error"
+    		}
 	}
 
 	return input_arr.join("");
