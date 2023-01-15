@@ -1,0 +1,102 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: sans-serif; */
+  /* font-family: 'Oxygen', sans-serif; */
+  /* font-family: 'Source Serif Pro', serif; */
+  font-family: 'Electrolize', sans-serif;
+}
+
+.application{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height:100vh;
+  background-color: black;
+}
+.calculator{
+  background-color: #22252D;
+  width: 100%;
+  max-width: 375px;
+  min-height: 640px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: solid #e3f702 5px;
+}
+.display{
+  min-height: 200px;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  color: white;
+  text-align: right;
+  flex: 1 1 0%;
+}
+.display .input{
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+.display .output{
+  font-size: 3rem;
+  font-weight: 700;
+  width: 100%;
+  max-width: 100%;
+  overflow: auto;
+}
+
+.display .operator{
+  color: #EB6666;
+}
+
+.display .brackets,
+.display .percent{
+  color: #26FED7;
+}
+
+.keypad{
+  background-color: #14054a;
+  padding: 1.5rem;
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-gap: 1rem;
+  box-shadow: 0px -2px 16px, rgba(219, 35, 100, 1);
+}
+
+.keypad .key{
+  position: relative;
+  cursor: pointer;
+
+  display:block;
+  height: 0;
+  padding-top: 100%;
+  background-color: #14054a;
+  border-radius: 2rem;
+  transition: 0.2s;
+  user-select: none;
+
+}
+.keypad .key span{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-size: 1.8rem;
+  font-weight: 620;
+  color:#FFFF;
+}
+.keypad .key:hover{
+  box-shadow: inset 0px 0px 20px rgba(12, 88, 246, 0.8);
+}
+
+.keypad .key.operator span{
+  color: #EB6666;
+}
+
+.keypad .key.action span{
+  color: #26FED7;
+}
