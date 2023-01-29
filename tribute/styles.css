@@ -1,0 +1,112 @@
+body{
+  margin: 0;
+}
+
+.bayern-div{
+  background-image: url('images/design_images/red_gradient_left.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  height: 250px;
+  font-family: 'Poppins', sans-serif;
+  /* position: relative; */
+}
+.bayern-img:hover{
+  transform: scale(1.1);
+}
+.bayern-img{
+  width: 15%;
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  transition: 0.5s;
+  /* bottom: 50px; */
+  /* width: 1.5rem; */
+}
+/* .red-grad{
+  width: 120%;
+  height: 400px;
+} */
+
+/* Accolades section */
+.accolades{
+  /* text-align: center; */
+  background-color: gold;
+  margin:0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* All trophy headline text */
+.trophy-text{
+  text-align: center;
+  margin: 0;
+}
+
+/* ----------------------------------------------- */
+
+/* Universal Design elements for trophy cards */
+
+.trophies{
+  display: flex;
+  /* background-color: gold; */
+  margin: 10px;
+}
+
+.trophy-div{
+  border-radius: 10px;
+}
+
+
+
+/* --------------------------------------------- */
+
+/* Individual card design elements */
+
+/* BUNDESLIGA */
+.bundesliga-card{
+  color: white;
+  font-family: 'Sofia Sans', sans-serif;
+  border: 15px solid red;
+  margin: 10px;
+  background-color: red;
+  background-image: url("images/trophies/bundesliga.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  /* display: flex; */
+}
+.bundesliga-trophy-img{
+  width: 70%;
+  padding-left: 50px;
+}
+
+/* UCL */
+.ucl-card{
+  color: white;
+  font-family: 'EB Garamond', serif;
+  border: 15px solid #5900b3;
+  margin: 10px;
+  background-color: #5900b3;
+  /* display: flex; */
+}
+.ucl-trophy-img{
+  width: 10rem;
+  padding-left: 110px
+}
+
+/* DFB POKAL */
+.pokal-card{
+  color: white;
+  font-family: 'Sofia Sans', sans-serif;
+  border: 15px solid  #01e05a;
+  margin: 10px;
+  background-color:  #01e05a;
+  /* display: flex; */
+}
+.pokal-trophy-img{
+  /* position: absolute; */
+  /* left: 30px; */
+  width: 10rem;
+  padding-left: 50px;
+  padding-right: 50px;
+}
